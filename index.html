@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mineland — ванильный сервер Minecraft</title>
-<meta name="description" content="Mineland — лучший ванильный сервер Minecraft для ваших построек. Сервер 26.84.4.227:25565, версия 1.21.8.">
-<meta name="theme-color" content="#0d1117">
+<meta name="description" content="Mineland — лучший ванильный сервер Minecraft для ваших построек. IP 26.84.4.227:25565, версия 1.21.8. Нужна проходка на ник.">
+<meta name="theme-color" content="#0b0f16">
 <link rel="icon" href="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/">
 <link rel="apple-touch-icon" href="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/">
 <link rel="manifest" href="site.webmanifest">
@@ -17,59 +17,162 @@
 </head>
 <body>
 
-<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg" aria-hidden="true">
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-blocks">
+    <span style="--x:4%;--y:18%;--d:0s;--s:26px"></span>
+    <span style="--x:12%;--y:64%;--d:1.4s;--s:18px"></span>
+    <span style="--x:22%;--y:8%;--d:.7s;--s:32px"></span>
+    <span style="--x:78%;--y:12%;--d:2.1s;--s:22px"></span>
+    <span style="--x:88%;--y:58%;--d:1.1s;--s:30px"></span>
+    <span style="--x:70%;--y:78%;--d:.4s;--s:16px"></span>
+  </div>
+</div>
 
 <header class="header">
-  <a class="logo" href="#top">
-    <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="Логотип Mineland">
-    <span>Mineland</span>
-  </a>
-  <nav class="nav">
-    <a href="#about">О сервере</a>
-    <a href="#features">Возможности</a>
-    <a href="#how">Как зайти</a>
-  </nav>
-  <a class="btn btn-discord btn-sm" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="Логотип Mineland">
+      <span>Mineland</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">О сервере</a>
+      <a href="#features">Возможности</a>
+      <a href="#how">Как зайти</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn-discord btn-sm" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+  </div>
 </header>
 
 <main id="top">
 
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero wrap">
     <span class="badge" id="statusBadge"><i class="dot"></i><span id="statusText">Проверяем сервер…</span></span>
 
     <img class="hero-logo" src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="Mineland">
+
     <h1 class="hero-title">Mineland</h1>
     <p class="hero-sub">Лучший ванильный сервер Minecraft для ваших построек</p>
 
+    <div class="hero-tags">
+      <span class="tag">Версия 1.21.8</span>
+      <span class="tag">Java Edition</span>
+      <span class="tag">По проходке</span>
+    </div>
+
     <div class="ip-box">
-      <span class="ip-label">IP сервера</span>
-      <code class="ip-value">26.84.4.227:25565</code>
-      <button class="btn btn-ghost btn-sm" id="copyIp" type="button">Скопировать</button>
+      <div class="ip-text">
+        <span class="ip-label">IP сервера</span>
+        <code class="ip-value">26.84.4.227:25565</code>
+      </div>
+      <button class="btn btn-ghost btn-sm" id="copyIp" type="button">Копировать</button>
     </div>
 
     <div class="actions">
       <a class="btn btn-buy" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
       <a class="btn btn-discord" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord сервера</a>
     </div>
-  </section>
 
-  <section class="section" id="about">
-    <h2>О сервере</h2>
-    <p>
-      Mineland — лучший ванильный сервер Minecraft для ваших построек. У нас нет гриферов и pay-to-win:
-      только чистый ванильный геймплей, свободные территории и лояльное комьюнити, которое помогает
-      воплощать идеи в жизнь.
-    </p>
-    <div class="stats">
-      <div class="stat"><b id="statPlayers">—</b><span>игроков онлайн</span></div>
-      <div class="stat"><b>1.21.8</b><span>версия игры</span></div>
-      <div class="stat"><b id="statPing">—</b><span>мс до сервера</span></div>
-      <div class="stat"><b>100%</b><span>ванильный геймплей</span></div>
+    <div class="hero-stats">
+      <div class="hstat"><b id="statPlayers">—</b><span>онлайн</span></div>
+      <div class="hstat"><b>1.21.8</b><span>версия</span></div>
+      <div class="hstat"><b id="statPing">—</b><span>мс</span></div>
+      <div class="hstat"><b>24/7</b><span>онлайн-сервер</span></div>
     </div>
   </section>
 
-  <section class="section" id="features">
-    <h2>Возможности</h2>
+  <!-- ABOUT -->
+  <section class="section wrap" id="about">
+    <span class="eyebrow">О проекте</span>
+    <h2>Сервер для ваших построек</h2>
+    <div class="about-grid">
+      <p>
+        Mineland — лучший ванильный сервер Minecraft для ваших построек. Никаких гриферов,
+        pay-to-win и купленных привилегий в игре: только чистый ванильный геймплей, свободные
+        территории и лояльное комьюнити, которое помогает воплощать идеи в жизнь.
+      </p>
+      <div class="about-points">
+        <div class="apoint"><i>✓</i><div><b>Чистый ванильный геймплей</b><span>Без плагинов, ломающих баланс</span></div></div>
+        <div class="apoint"><i>✓</i><div><b>Свободные территории</b><span>Стройте города, замки и целые миры</span></div></div>
+        <div class="apoint"><i>✓</i><div><b>Живое комьюнити</b><span>Discord, идеи, общие постройки</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO JOIN -->
+  <section class="section wrap" id="how">
+    <span class="eyebrow">Условия захода</span>
+    <h2>Как зайти на сервер</h2>
+    <p class="section-lead">Четыре шага — и вы в игре. Проходка нужна для каждого ник-нейма.</p>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Приобретите проходку на свой ник-нейм</h3>
+          <p>
+            Зайдите в раздел продавца и в поле комментария укажите свой игровой ник-нейм —
+            проходка выдаётся именно на него и не переносится автоматически.
+          </p>
+          <a class="btn btn-buy btn-sm" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Запустите Minecraft Launcher</h3>
+          <p>
+            Подойдёт оригинальный или пиратский лаунчер — версия клиента значения не имеет.
+            Выберите версию <b>1.21.8</b> (или новее), войдите в свой аккаунт Minecraft.
+          </p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Дождитесь добавления в белый список</h3>
+          <p>
+            После оплаты ваш ник-нейм добавляется в белый список (whitelist) вручную,
+            обычно в течение нескольких минут. Пока вы не добавлены — сервер не примет вас,
+            даже если проходка уже оплачена.
+          </p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Добавьте сервер и заходите в игру</h3>
+          <p>
+            В лаунчере откройте раздел <b>Сетевая игра</b> → <b>Добавить</b> и введите адрес сервера.
+            Нажмите <b>Готово</b> и подключайтесь.
+          </p>
+          <div class="ip-box ip-box-inline">
+            <div class="ip-text">
+              <span class="ip-label">IP сервера</span>
+              <code class="ip-value">26.84.4.227:25565</code>
+            </div>
+            <button class="btn btn-ghost btn-sm" type="button" data-copy-ip>Копировать</button>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="cta">
+      <a class="btn btn-buy btn-lg" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
+      <a class="btn btn-discord btn-lg" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Вступить в Discord</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section wrap" id="features">
+    <span class="eyebrow">Возможности</span>
+    <h2>Что есть на сервере</h2>
     <div class="cards">
       <article class="card">
         <div class="card-ico">🏠</div>
@@ -79,7 +182,7 @@
       <article class="card">
         <div class="card-ico">🛡</div>
         <h3>Антигриф и защита</h3>
-        <p>Бонусные регионы, защита от гриферов и аккуратные правила без перегревов.</p>
+        <p>Бонусные регионы и защита построек — гриферы не пройдут.</p>
       </article>
       <article class="card">
         <div class="card-ico">💬</div>
@@ -89,48 +192,59 @@
       <article class="card">
         <div class="card-ico">⚡</div>
         <h3>Стабильный TPS</h3>
-        <p>Оптимизированное железо и регулярные бэкапы — ваши постройки всегда в безопасности.</p>
+        <p>Оптимизированное железо и регулярные бэкапы — постройки в безопасности.</p>
       </article>
       <article class="card">
         <div class="card-ico">🎁</div>
-        <h3>Проходки и донат</h3>
-        <p>Проходка открывает дополнительные привилегии, не ломая баланс игры.</p>
+        <h3>Проходки и привилегии</h3>
+        <p>Проходка открывает дополнительные возможности, не ломая баланс игры.</p>
       </article>
       <article class="card">
         <div class="card-ico">🧭</div>
         <h3>Удобные телепорты</h3>
-        <p>Быстрые телепорты между спавном и вашими постройками без лишних команд.</p>
+        <p>Быстрые телепорты между спавном и вашими постройками.</p>
       </article>
     </div>
   </section>
 
-  <section class="section" id="how">
-    <h2>Как зайти</h2>
-    <ol class="steps">
-      <li>Запустите Minecraft на версии <b>1.21.8</b> (или новее).</li>
-      <li>В разделе <b>Сетевая игра</b> выберите <b>Добавить</b>.</li>
-      <li>Введите адрес сервера: <code>26.84.4.227:25565</code></li>
-      <li>Нажмите <b>Готово</b> и наслаждайтесь!</li>
-    </ol>
-
-    <div class="cta">
-      <a class="btn btn-buy btn-lg" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
-      <a class="btn btn-discord btn-lg" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Вступить в Discord</a>
+  <!-- FAQ -->
+  <section class="section wrap" id="faq">
+    <span class="eyebrow">FAQ</span>
+    <h2>Частые вопросы</h2>
+    <div class="faq">
+      <details>
+        <summary>Нужна ли лицензия Minecraft?</summary>
+        <p>Нет. Подойдёт оригинальный аккаунт или пиратский клиент — важна только версия 1.21.8 и вход в лаунчер.</p>
+      </details>
+      <details>
+        <summary>Проходка переносится на другой ник?</summary>
+        <p>Нет, проходка выдаётся на конкретный ник-нейм. Для другого ника нужно оформить отдельную проходку.</p>
+      </details>
+      <details>
+        <summary>Сколько ждать после оплаты?</summary>
+        <p>Обычно несколько минут. Как только вас добавят в белый список, сервер пустит на вход.</p>
+      </details>
+      <details>
+        <summary>Какая версия нужна?</summary>
+        <p>Рекомендуется 1.21.8. Более новые версии клиента тоже подходят.</p>
+      </details>
     </div>
   </section>
 
 </main>
 
 <footer class="footer">
-  <div class="footer-logo">
-    <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="" width="40" height="40">
-    <span>Mineland</span>
-  </div>
-  <p>© <span id="year"></span> Mineland · <code>26.84.4.227:25565</code> · 1.21.8</p>
-  <p class="footer-note">Не связан с Mojang и Microsoft.</p>
-  <div class="footer-links">
-    <a href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">FunPay</a>
-    <a href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+  <div class="wrap footer-inner">
+    <div class="footer-logo">
+      <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="" width="38" height="38">
+      <span>Mineland</span>
+    </div>
+    <p><code>26.84.4.227:25565</code> · Minecraft 1.21.8 · <span id="year"></span></p>
+    <p class="footer-note">Не связан с Mojang и Microsoft.</p>
+    <div class="footer-links">
+      <a href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">FunPay — купить проходку</a>
+      <a href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+    </div>
   </div>
 </footer>
 
@@ -147,6 +261,7 @@
   const statusText = document.getElementById('statusText');
   const statPlayers = document.getElementById('statPlayers');
   const statPing = document.getElementById('statPing');
+  const toast = document.getElementById('toast');
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -185,10 +300,9 @@
 
   function render(s) {
     if (s.online) {
-      const txt = s.playersOnline != null
-        ? 'Онлайн: ' + s.playersOnline + (s.playersMax != null ? '/' + s.playersMax : '') + ' игроков'
-        : 'Сервер онлайн';
-      setBadge('is-online', txt);
+      setBadge('is-online', s.playersOnline != null
+        ? 'Онлайн: ' + s.playersOnline + (s.playersMax != null ? '/' + s.playersMax : '')
+        : 'Сервер онлайн');
       statPlayers.textContent = s.playersOnline != null
         ? s.playersOnline + (s.playersMax != null ? '/' + s.playersMax : '')
         : 'ON';
@@ -219,10 +333,7 @@
     if (!document.hidden) refresh();
   });
 
-  const copyBtn = document.getElementById('copyIp');
-  const toast = document.getElementById('toast');
-
-  copyBtn.addEventListener('click', async () => {
+  async function copyIp(btn) {
     try {
       await navigator.clipboard.writeText(SERVER_IP);
     } catch (e) {
@@ -234,12 +345,32 @@
       ta.remove();
     }
     toast.classList.add('show');
-    copyBtn.textContent = 'Готово';
-    setTimeout(() => {
+    const original = btn.dataset.label || btn.textContent;
+    btn.dataset.label = original;
+    btn.textContent = 'Готово';
+    clearTimeout(btn._t);
+    btn._t = setTimeout(() => {
       toast.classList.remove('show');
-      copyBtn.textContent = 'Скопировать';
+      btn.textContent = original;
     }, 1800);
+  }
+
+  document.querySelectorAll('#copyIp, [data-copy-ip]').forEach(btn => {
+    btn.addEventListener('click', () => copyIp(btn));
   });
+
+  const reveals = document.querySelectorAll('.section, .hero-stats');
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('in'), i * 70);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  }
 </script>
 
 </body>
