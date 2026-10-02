@@ -1,0 +1,17 @@
+{
+  "name": "Mineland — ванильный сервер Minecraft",
+  "short_name": "Mineland",
+  "description": "Лучший ванильный сервер Minecraft для ваших построек",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
