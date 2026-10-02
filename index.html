@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mineland — ванильный сервер Minecraft</title>
+<meta name="description" content="Mineland — лучший ванильный сервер Minecraft для ваших построек. Сервер 26.84.4.227:25565, версия 1.21.8.">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/">
+<link rel="apple-touch-icon" href="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mineland — ванильный сервер Minecraft">
+<meta property="og:description" content="Лучший ванильный сервер Minecraft для ваших построек">
+<meta property="og:image" content="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header class="header">
+  <a class="logo" href="#top">
+    <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="Логотип Mineland">
+    <span>Mineland</span>
+  </a>
+  <nav class="nav">
+    <a href="#about">О сервере</a>
+    <a href="#features">Возможности</a>
+    <a href="#how">Как зайти</a>
+  </nav>
+  <a class="btn btn-discord btn-sm" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <span class="badge" id="statusBadge"><i class="dot"></i><span id="statusText">Проверяем сервер…</span></span>
+
+    <img class="hero-logo" src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="Mineland">
+    <h1 class="hero-title">Mineland</h1>
+    <p class="hero-sub">Лучший ванильный сервер Minecraft для ваших построек</p>
+
+    <div class="ip-box">
+      <span class="ip-label">IP сервера</span>
+      <code class="ip-value">26.84.4.227:25565</code>
+      <button class="btn btn-ghost btn-sm" id="copyIp" type="button">Скопировать</button>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-buy" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
+      <a class="btn btn-discord" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord сервера</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>О сервере</h2>
+    <p>
+      Mineland — лучший ванильный сервер Minecraft для ваших построек. У нас нет гриферов и pay-to-win:
+      только чистый ванильный геймплей, свободные территории и лояльное комьюнити, которое помогает
+      воплощать идеи в жизнь.
+    </p>
+    <div class="stats">
+      <div class="stat"><b id="statPlayers">—</b><span>игроков онлайн</span></div>
+      <div class="stat"><b>1.21.8</b><span>версия игры</span></div>
+      <div class="stat"><b id="statPing">—</b><span>мс до сервера</span></div>
+      <div class="stat"><b>100%</b><span>ванильный геймплей</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Возможности</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-ico">🏠</div>
+        <h3>Свободные территории</h3>
+        <p>Просторные unregistered-зоны без лимитов — стройте города, замки и целые миры.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🛡</div>
+        <h3>Антигриф и защита</h3>
+        <p>Бонусные регионы, защита от гриферов и аккуратные правила без перегревов.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">💬</div>
+        <h3>Живой Discord</h3>
+        <p>Общайтесь с игроками, голосуйте за идеи и следите за анонсами обновлений.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">⚡</div>
+        <h3>Стабильный TPS</h3>
+        <p>Оптимизированное железо и регулярные бэкапы — ваши постройки всегда в безопасности.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🎁</div>
+        <h3>Проходки и донат</h3>
+        <p>Проходка открывает дополнительные привилегии, не ломая баланс игры.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🧭</div>
+        <h3>Удобные телепорты</h3>
+        <p>Быстрые телепорты между спавном и вашими постройками без лишних команд.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <h2>Как зайти</h2>
+    <ol class="steps">
+      <li>Запустите Minecraft на версии <b>1.21.8</b> (или новее).</li>
+      <li>В разделе <b>Сетевая игра</b> выберите <b>Добавить</b>.</li>
+      <li>Введите адрес сервера: <code>26.84.4.227:25565</code></li>
+      <li>Нажмите <b>Готово</b> и наслаждайтесь!</li>
+    </ol>
+
+    <div class="cta">
+      <a class="btn btn-buy btn-lg" href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">Купить проходку</a>
+      <a class="btn btn-discord btn-lg" href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Вступить в Discord</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="https://1s4oyld5dc.ucarecd.net/358ca306-848c-48ce-bc9b-4d821a0fffc1/" alt="" width="40" height="40">
+    <span>Mineland</span>
+  </div>
+  <p>© <span id="year"></span> Mineland · <code>26.84.4.227:25565</code> · 1.21.8</p>
+  <p class="footer-note">Не связан с Mojang и Microsoft.</p>
+  <div class="footer-links">
+    <a href="https://funpay.com/users/21641617/" target="_blank" rel="noopener">FunPay</a>
+    <a href="https://discord.gg/Hm4kk4cG2" target="_blank" rel="noopener">Discord</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast">IP скопирован</div>
+
+<script>
+  const SERVER_IP = '26.84.4.227:25565';
+  const API_URLS = [
+    'https://api.mcsrvstat.us/3/' + SERVER_IP,
+    'https://api.mcstatus.io/v2/status/java/' + SERVER_IP
+  ];
+
+  const badge = document.getElementById('statusBadge');
+  const statusText = document.getElementById('statusText');
+  const statPlayers = document.getElementById('statPlayers');
+  const statPing = document.getElementById('statPing');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function setBadge(cls, text) {
+    badge.classList.remove('is-online', 'is-offline', 'is-wait');
+    badge.classList.add(cls);
+    statusText.textContent = text;
+  }
+
+  async function getJson(url) {
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  }
+
+  function normalizeMcsrv(data) {
+    const online = !!data.online;
+    const p = data.players || {};
+    return {
+      online: online,
+      playersOnline: online ? (p.online ?? null) : 0,
+      playersMax: online ? (p.max ?? null) : null,
+      ping: data.latency != null ? Math.round(data.latency) : null
+    };
+  }
+
+  function normalizeMcstatus(data) {
+    const online = !!data.online;
+    return {
+      online: online,
+      playersOnline: online ? data.players?.online ?? null : 0,
+      playersMax: online ? data.players?.max ?? null : null,
+      ping: null
+    };
+  }
+
+  function render(s) {
+    if (s.online) {
+      const txt = s.playersOnline != null
+        ? 'Онлайн: ' + s.playersOnline + (s.playersMax != null ? '/' + s.playersMax : '') + ' игроков'
+        : 'Сервер онлайн';
+      setBadge('is-online', txt);
+      statPlayers.textContent = s.playersOnline != null
+        ? s.playersOnline + (s.playersMax != null ? '/' + s.playersMax : '')
+        : 'ON';
+    } else {
+      setBadge('is-offline', 'Сервер оффлайн');
+      statPlayers.textContent = '0';
+    }
+    statPing.textContent = s.ping != null ? s.ping : '—';
+  }
+
+  async function refresh() {
+    setBadge('is-wait', 'Проверяем сервер…');
+    for (const url of API_URLS) {
+      try {
+        const data = await getJson(url);
+        const s = url.includes('mcstatus') ? normalizeMcstatus(data) : normalizeMcsrv(data);
+        if (s.online || url === API_URLS[API_URLS.length - 1]) render(s);
+        if (s.online) return;
+      } catch (e) {}
+    }
+    setBadge('is-offline', 'Статус недоступен');
+    statPlayers.textContent = '—';
+  }
+
+  refresh();
+  setInterval(refresh, 30000);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) refresh();
+  });
+
+  const copyBtn = document.getElementById('copyIp');
+  const toast = document.getElementById('toast');
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(SERVER_IP);
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = SERVER_IP;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    toast.classList.add('show');
+    copyBtn.textContent = 'Готово';
+    setTimeout(() => {
+      toast.classList.remove('show');
+      copyBtn.textContent = 'Скопировать';
+    }, 1800);
+  });
+</script>
+
+</body>
+</html>
